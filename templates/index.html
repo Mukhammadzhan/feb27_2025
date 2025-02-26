@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Main page</title>
+</head>
+<body>
+
+    <h2>Добро пожаловать, {{ profile }}!</h2>
+   
+        <div id="bar">
+            <a href=" {{ url_for('get_log' )}} "><button >Log in </button></a>
+            <a href=" {{ url_for('get_reg' )}} "><button >Register</a>
+            <a href=" {{ url_for('logout' )}} "><button >logout </button></a>
+
+
+        </div>
+
+        <form action="" method="post">
+
+            <h1>Создать объявление</h1>
+            <input type="text" name="title" id="" placeholder="Имя машины">
+            <input type="number" name="price" id="" placeholder="Стоимость">
+            <button type="submit">Опубликовать</button>
+
+            <h2>Products</h2>
+                <ul>
+                    {% for title, price in product.items() %}
+                        <li>{{ title }}: ${{ price }}</li>
+                    {% endfor %}
+                </ul> 
+        </form>
+
+
+  
+
+    
+</body>
+</html>

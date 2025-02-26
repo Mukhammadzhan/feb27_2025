@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/reg.css') }}">
+    <title>Document</title>
+</head>
+<body>
+    <a href=" {{ url_for('get_log' )}}  "><button>log in</button></a>
+
+    <form action="" method="post">
+        <center>
+            <div id="main">
+                <input type="text" name="login" id="" placeholder="Логин тут">
+                <br>
+                <input type="number" name="password" id="" placeholder="Пароль тут">
+                <br>
+                <button id="bth" type="submit">Sign in</button>
+            </div>
+        </center>
+ 
+
+    </form>
+
+    
+</body>
+</html>

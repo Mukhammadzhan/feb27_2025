@@ -1,0 +1,13 @@
+#bar{
+    height: 100px;
+    width: 100%;
+    background-color: silver;
+    display: flex;
+    flex-direction: row;
+
+}
+button{
+    height: 100px;
+    width: 100px;
+    align-items: flex-end;
+}

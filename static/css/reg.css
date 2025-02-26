@@ -1,0 +1,22 @@
+#main{
+
+    height: 250px;
+    width: 250px;
+    background-color: silver;
+    opacity: 0.5;
+}
+body{
+    background-image: url(https://7themes.su/_ph/27/507274575.jpg);
+    background-repeat: no-repeat;
+}
+
+#bth{
+    color: white;
+    background-color: green;
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+    margin-top: 10px;
+}
